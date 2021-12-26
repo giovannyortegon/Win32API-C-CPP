@@ -1,0 +1,4 @@
+$ gcc -mconsole main.c -o main.exe   //   -lgdi32
+
+$ gcc -c main.c
+$ gcc -o main.exe main.o -mwindows
