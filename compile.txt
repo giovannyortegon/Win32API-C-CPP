@@ -2,3 +2,11 @@ $ gcc -mconsole main.c -o main.exe   //   -lgdi32
 
 $ gcc -c main.c
 $ gcc -o main.exe main.o -mwindows
+
+Install on Linux
+
+sudo apt install gcc-mingw-w64 gcc-mingw-w64-base gcc-mingw-w64-i686 gcc-mingw-w64-i686-win32 gcc-mingw-w64-i686-win32-runtime wine
+
+
+i686-w64-mingw32-gcc-win32 -c -mwindows CreateWindow.c
+i686-w64-mingw32-gcc-win32 -o main.exe CreateWindow.o -lgdi32 -lcomctl32 -Wl,--subsystem,windows
